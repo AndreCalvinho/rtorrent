@@ -3,7 +3,8 @@
 # Copy to ~/.rtorrent.rc and enable/modify the options as needed.
 # Remember to uncomment the options you wish to enable.
 #
-# File: https://github.com/rakshasa/rtorrent/blob/master/doc/rtorrent.rc
+# Useful: https://github.com/rakshasa/rtorrent/wiki/CONFIG-Template
+#   File: https://github.com/rakshasa/rtorrent/blob/master/doc/rtorrent.rc
 #############################################################################
 
 # Maximum and minimum number of peers to connect to per torrent.
@@ -107,3 +108,16 @@
 # Set download list layout style ("full", "compact").
 #
 #ui.torrent_list.layout.set = "full"
+
+# Run rTorrent as a daemon, controlled via XMLRPC.
+#
+#system.daemon.set = false
+
+# XMLRPC via a socket and set permissions.
+#
+#network.scgi.open_local = /tmp/.rtorrent.sock
+#schedule2 = socket_chmod, 0, 0, "execute.nothrow=chmod,g+w,/tmp/.rtorrent.sock"
+
+# XMLRPC via TCP port.
+#
+#network.scgi.open_port = "127.0.0.1:5000"
