@@ -1,10 +1,17 @@
 #############################################################################
-# This is an example resource file for rTorrent.
+# This is an (old) example resource file for rTorrent.
 # Copy to ~/.rtorrent.rc and enable/modify the options as needed.
 # Remember to uncomment the options you wish to enable.
 #
-# Useful: https://github.com/rakshasa/rtorrent/wiki/CONFIG-Template
-#   File: https://github.com/rakshasa/rtorrent/blob/master/doc/rtorrent.rc
+# See 'rtorrent.rc-example' for a newer, basic configuration.
+#
+#   Sample: https://github.com/rakshasa/rtorrent/wiki/CONFIG-Template
+# Complete: https://rtorrent-docs.readthedocs.io/en/latest/cmd-ref.html
+#   Useful: https://rtorrent-docs.readthedocs.io/en/latest/use-cases.html
+#   Manual: https://rtorrent-docs.readthedocs.io/en/latest/
+#  Convert: https://github.com/rakshasa/rtorrent/wiki/rTorrent-0.9-Comprehensive-Command-list-(WIP)
+# Handbook: https://media.readthedocs.org/pdf/rtorrent-docs/latest/rtorrent-docs.pdf
+#     File: https://github.com/rakshasa/rtorrent/blob/master/doc/rtorrent.rc
 #############################################################################
 
 # Maximum and minimum number of peers to connect to per torrent.
