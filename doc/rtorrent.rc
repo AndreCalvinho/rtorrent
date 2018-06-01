@@ -115,8 +115,8 @@
 
 # XMLRPC via a socket and set permissions.
 #
-#network.scgi.open_local = /tmp/.rtorrent.sock
-#schedule2 = socket_chmod, 0, 0, "execute.nothrow=chmod,g+w,/tmp/.rtorrent.sock"
+#network.scgi.open_local = (cat,(session.path),/rtorrent.sock)
+#schedule2 = socket_chmod, 0, 0, "execute.nothrow=chmod,770,(cat,(session.path),/rtorrent.sock)"
 
 # XMLRPC via TCP port.
 #
